@@ -6,6 +6,7 @@ import { RouteConfigLoadStart } from '@angular/router';
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.scss'],
 })
+
 export class RatingComponent implements OnInit {
 
   @Input() rating: number;
@@ -13,6 +14,7 @@ export class RatingComponent implements OnInit {
 
   constructor() { }
 
+    
   rate(index: number) {
     // function used to change the value of our rating
     //triggered when user, clicks a star to change the rating
@@ -45,4 +47,10 @@ export class RatingComponent implements OnInit {
 
   ngOnInit() {}
 
+}
+enum COLORS {
+  GREY = "#E0E0E0",
+  GREEN = "#76FF03",
+  YELLOW= "#FFCA28",
+  RED = "#DD2C00"
 }
